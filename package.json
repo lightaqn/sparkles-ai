@@ -1,0 +1,46 @@
+{
+  "name": "central",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@react-spring/three": "^9.7.3",
+    "@react-three/drei": "^9.90.2",
+    "@react-three/fiber": "^8.15.12",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.16.7",
+    "@types/three": "^0.159.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "framer-motion": "^10.16.16",
+    "lucide-react": "^0.279.0",
+    "next": "latest",
+    "next-themes": "^0.2.1",
+    "next-transpile-modules": "^10.0.1",
+    "query-string": "^8.1.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-vertical-timeline-component": "^3.6.0",
+    "sanity": "^3.16.7",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.159.0"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}

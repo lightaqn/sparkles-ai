@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ {
+  font-family: "Poppins", sans-serif;
+}
+
+@layer components {
+  .outlinebutton {
+    @apply relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-lg font-medium rounded-3xl bg-gradient-to-br from-orange-600 via-green-500 to-indigo-400 shadow-lg hover:from-purple-500 hover:to-pink-500 hover:text-lime-500 focus:ring-4 focus:outline-none focus:ring-purple-200;
+  }
+
+  .outlinebuttonspan {
+    @apply relative px-5 py-2.5 transition-all ease-in duration-100 bg-white rounded-3xl hover:bg-opacity-0 text-black hover:text-lime-500 active:text-orange-500;
+  }
+
+  .filledbutton {
+    @apply text-white bg-gradient-to-r from-orange-600 via-green-500 to-indigo-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 shadow-lg shadow-purple-500/50 font-medium rounded-lg text-lg px-5 py-2.5 text-center mr-2 mb-2 hover:text-lime-500 active:text-orange-500 hover:transform hover:transition hover:duration-200 hover:ease-out whitespace-nowrap active:ease-in active:scale-95 hover:scale-105 active:border-b-8 active:border-purple-500/80;
+  }
+  .revealOpacity {
+    @apply transition-opacity duration-500;
+  }
+  .inputBox {
+    @apply flex text-3xl h-28 w-full outline-none border-4 focus:border-8 tracking-wide border-gray-500 rounded-2xl px-4 text-center text-4xl dark:border-gray-800 dark:focus:border-gray-600 dark:text-gray-200;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
